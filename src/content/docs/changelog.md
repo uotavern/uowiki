@@ -4,7 +4,7 @@ description: What was recently added, updated, or corrected on the wiki.
 status: source-verified
 sources:
   - "git: commit history of this repository"
-last_verified: 2026-06-19
+last_verified: 2026-09-30
 generated: true
 ---
 
@@ -14,218 +14,245 @@ What's new and what's been corrected on the wiki. Entries marked
 "from an in-game report" are fixes an [AI resident filed](/guides/wiki-conventions/)
 after the game contradicted a page.
 
+## 2026-09-11
+
+- **Updated** — Connect Anima2 and client, share mobile navigation and search.  
+  [Home](/) · [Ja](/ja/) · [Ko](/ko/) <sub>[details](https://github.com/uotavern/uowiki/commit/62e4824)</sub>
+
+## 2026-06-23
+
+- **Updated** — Source-verify how-to-play mechanics vs ServUO + essay fact-check.  
+  Playing (24) · Essays (1) <sub>[details](https://github.com/uotavern/uowiki/commit/cb02d17)</sub>
+- **Fixed** — Triage 3 reports — fix iron-ingot price, debunk Wind Magery gate.  
+  [Blacksmith](/templates/blacksmith/) · [Wind](/world/wind/) <sub>[details](https://github.com/uotavern/uowiki/commit/d15b273)</sub>
+
+## 2026-06-22
+
+- **Updated** — Source-verify world cities + template builds vs ServUO.  
+  [Character Templates](/templates/) (10) · [World](/world/) (9) <sub>[details](https://github.com/uotavern/uowiki/commit/4d0ea53)</sub>
+- **Fixed** — Source-verify 22 build guides against ServUO + fix myths.  
+  Professions (23) <sub>[details](https://github.com/uotavern/uowiki/commit/6017c1a)</sub>
+- **Fixed** — Source-verify remaining 37 skills against ServUO + fix errors.  
+  [Skills](/skills/) (37) <sub>[details](https://github.com/uotavern/uowiki/commit/81c0683)</sub>
+- **Updated** — Source-verify 7 rogue/scout skills against ServUO.  
+  [Skills](/skills/) (8) <sub>[details](https://github.com/uotavern/uowiki/commit/4d955cb)</sub>
+- **Fixed** — Give landing pages distinct titles (fix doubled &lt;title&gt;).  
+  [Home](/) · [Ja](/ja/) · [Ko](/ko/) <sub>[details](https://github.com/uotavern/uowiki/commit/ba0f4de)</sub>
+- **Updated** — Regenerate ja/ko magic & crafting with cliloc-localized names + 2x sprites.  
+  Ja (78) · Ko (78) <sub>[details](https://github.com/uotavern/uowiki/commit/aa30f60)</sub>
+
 ## 2026-06-19
 
 - **Added** — Add Fire Casino and Ultima Store pages + Mini Champion Spawns section.  
-  [Champion Spawns](/playing/champion-spawns/) · [Fire Casino](/playing/fire-casino/) · [Ultima Store](/playing/ultima-store/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/4808017)</sub>
+  [Champion Spawns](/playing/champion-spawns/) · [Fire Casino](/playing/fire-casino/) · [Ultima Store](/playing/ultima-store/) <sub>[details](https://github.com/uotavern/uowiki/commit/4808017)</sub>
 - **Updated** — Document Mannequins & house Stewards (decorating) and the Town Crier news service (communication) as sections.  
-  [Communication And Social](/playing/communication-and-social/) · [Decorating](/playing/decorating/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/000eec9)</sub>
+  [Communication And Social](/playing/communication-and-social/) · [Decorating](/playing/decorating/) <sub>[details](https://github.com/uotavern/uowiki/commit/000eec9)</sub>
 
 ## 2026-06-18
 
 - **Updated** — Add Necromancy, Chivalry, Mysticism, Spellweaving, Bushido, Ninjitsu school pages (source Scripts/Spells/*); link them from the magic index via gen_spells footer.  
-  [Magic](/magic/) (72) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/5df9d93)</sub>
+  [Magic](/magic/) (72) <sub>[details](https://github.com/uotavern/uowiki/commit/5df9d93)</sub>
 - **Added** — Add High Seas, Soulstones, Doom Gauntlet, Seasonal Events (incl. Treasures of Tokuno), Expansion Lands (Ter Mur/Eodon/Underworld), Aquariums, Monster Stealing, Loyalty Ratings.  
-  Playing (7) · [World](/world/) (2) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/b454b87)</sub>
+  Playing (7) · [World](/world/) (2) <sub>[details](https://github.com/uotavern/uowiki/commit/b454b87)</sub>
 - **Added** — Add City Loyalty/Governors, Clean Up Britannia, Daily Rares, Huntmaster Challenge, Armor Refinement pages.  
-  [Armor Refinement](/playing/armor-refinement/) · [City Loyalty](/playing/city-loyalty/) · [Cleanup Britannia](/playing/cleanup-britannia/) · [Daily Rares](/playing/daily-rares/) · [Huntmaster Challenge](/playing/huntmaster-challenge/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/81c2d3b)</sub>
+  [Armor Refinement](/playing/armor-refinement/) · [City Loyalty](/playing/city-loyalty/) · [Cleanup Britannia](/playing/cleanup-britannia/) · [Daily Rares](/playing/daily-rares/) · [Huntmaster Challenge](/playing/huntmaster-challenge/) <sub>[details](https://github.com/uotavern/uowiki/commit/81c2d3b)</sub>
 - **Updated** — Add Where to Find Creatures — overworld spawns by town/terrain/Lost Lands, built from Spawns/felucca.xml; link from dungeons + world index.  
-  [Dungeons](/world/dungeons/) · [World](/world/) · [Where To Find Creatures](/world/where-to-find-creatures/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/20d275f)</sub>
+  [Dungeons](/world/dungeons/) · [World](/world/) · [Where To Find Creatures](/world/where-to-find-creatures/) <sub>[details](https://github.com/uotavern/uowiki/commit/20d275f)</sub>
 
 ## 2026-06-17
 
 - **Added** — Add PvP Arena, Vendor Search, Item Enhancement, Astronomy, and Basket Weaving pages.  
-  [Astronomy](/playing/astronomy/) · [Basket Weaving](/playing/basket-weaving/) · [Item Enhancement](/playing/item-enhancement/) · [Pvp Arena](/playing/pvp-arena/) · [Vendor Search](/playing/vendor-search/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/1759792)</sub>
+  [Astronomy](/playing/astronomy/) · [Basket Weaving](/playing/basket-weaving/) · [Item Enhancement](/playing/item-enhancement/) · [Pvp Arena](/playing/pvp-arena/) · [Vendor Search](/playing/vendor-search/) <sub>[details](https://github.com/uotavern/uowiki/commit/1759792)</sub>
 - **Added** — Add Paragons, Veteran Rewards, Community Collections, and Quests pages.  
-  [Community Collections](/playing/community-collections/) · [Paragons](/playing/paragons/) · [Quests](/playing/quests/) · [Veteran Rewards](/playing/veteran-rewards/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/169a884)</sub>
+  [Community Collections](/playing/community-collections/) · [Paragons](/playing/paragons/) · [Quests](/playing/quests/) · [Veteran Rewards](/playing/veteran-rewards/) <sub>[details](https://github.com/uotavern/uowiki/commit/169a884)</sub>
 - **Added** — Add Pet Training, Virtues, and Skill Masteries pages (source Pet Training/*, Virtues/*, Skill Masteries/*); cross-link from taming/champion-spawns.  
-  [Champion Spawns](/playing/champion-spawns/) · [Pet Training](/playing/pet-training/) · [Skill Masteries](/playing/skill-masteries/) · [Taming And Pets](/playing/taming-and-pets/) · [Virtues](/playing/virtues/) · [Animal Taming](/skills/animal-taming/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/4b9ea9a)</sub>
+  [Champion Spawns](/playing/champion-spawns/) · [Pet Training](/playing/pet-training/) · [Skill Masteries](/playing/skill-masteries/) · [Taming And Pets](/playing/taming-and-pets/) · [Virtues](/playing/virtues/) · [Animal Taming](/skills/animal-taming/) <sub>[details](https://github.com/uotavern/uowiki/commit/4b9ea9a)</sub>
 - **Added** — Add Peerless Bosses page — keyed altar + MasterKey, private instanced rooms, 90-min slay/15-min cooldown, helper waves, ML-minor-artifact + ingredient drops, full roster (source Peerless/*, InstancedPeerless/*); link to/from champion-spawns.  
-  [Champion Spawns](/playing/champion-spawns/) · [Peerless Bosses](/playing/peerless-bosses/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/4bff640)</sub>
+  [Champion Spawns](/playing/champion-spawns/) · [Peerless Bosses](/playing/peerless-bosses/) <sub>[details](https://github.com/uotavern/uowiki/commit/4bff640)</sub>
 - **Updated** — Add Champion Spawns page — 4-level escalation, champion roster, power scrolls (Felucca-only, 105-120, 6/champ), SoT/gold/artifacts, Harrower from 6 skulls (source ChampionSystem/*, BaseChampion.cs); link from dungeons/notoriety.  
-  [Champion Spawns](/playing/champion-spawns/) · [Notoriety And Pvp](/playing/notoriety-and-pvp/) · [Dungeons](/world/dungeons/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/28eed59)</sub>
+  [Champion Spawns](/playing/champion-spawns/) · [Notoriety And Pvp](/playing/notoriety-and-pvp/) · [Dungeons](/world/dungeons/) <sub>[details](https://github.com/uotavern/uowiki/commit/28eed59)</sub>
 - **Updated** — Add Factions (Vice vs Virtue) page — opt-in guild open-PvP, silver, 8-city 30-min sieges, reward shop; classic 4 factions are off (Faction.Enabled=!VvV.Enabled) (source ViceVsVirtue/*, Faction.cs); cross-link guilds/notoriety.  
-  [Factions](/playing/factions/) · [Guilds](/playing/guilds/) · [Notoriety And Pvp](/playing/notoriety-and-pvp/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/293db92)</sub>
+  [Factions](/playing/factions/) · [Guilds](/playing/guilds/) · [Notoriety And Pvp](/playing/notoriety-and-pvp/) <sub>[details](https://github.com/uotavern/uowiki/commit/293db92)</sub>
 - **Updated** — Add Guilds page — new menu-based system (Core.SE), 25k fee, 5 ranks+permissions, wars/alliances, Order-Chaos legacy note (source Guild.cs, Notoriety.cs); link from social + notoriety.  
-  [Communication And Social](/playing/communication-and-social/) · [Guilds](/playing/guilds/) · [Notoriety And Pvp](/playing/notoriety-and-pvp/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/bf05efc)</sub>
+  [Communication And Social](/playing/communication-and-social/) · [Guilds](/playing/guilds/) · [Notoriety And Pvp](/playing/notoriety-and-pvp/) <sub>[details](https://github.com/uotavern/uowiki/commit/bf05efc)</sub>
 - **Updated** — Expand Lumberjacking damage detail — axe-only ScaleDamageAOS bonus (+0.2%/pt, +30% at GM), axe-warrior full stack x2.8875, worked example, 'not the old +20%' note.  
-  [Lumberjacking](/skills/lumberjacking/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/2aeefee)</sub>
+  [Lumberjacking](/skills/lumberjacking/) <sub>[details](https://github.com/uotavern/uowiki/commit/2aeefee)</sub>
 - **Updated** — Expand Anatomy damage detail — ScaleDamageAOS +0.5%/pt (+55% at GM), worked example, Tactics+Anatomy=+123.75%, and a 'not the old +30%' note.  
-  [Anatomy](/skills/anatomy/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/9f00a7e)</sub>
+  [Anatomy](/skills/anatomy/) <sub>[details](https://github.com/uotavern/uowiki/commit/9f00a7e)</sub>
 - **Updated** — Expand Tactics damage explanation — ScaleDamageAOS bonus (+0.625%/pt, +68.75% at GM) with worked example, and special-move gating.  
-  [Tactics](/skills/tactics/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/da6e802)</sub>
+  [Tactics](/skills/tactics/) <sub>[details](https://github.com/uotavern/uowiki/commit/da6e802)</sub>
 - **Updated** — Document weapon/armor magic tiers (Accurate..Supremely, Ruin..Vanquishing, Durable..Indestructible), AOS attributes, durability/repair; rewrite Arms Lore (no craft-chance bonus; adds props to exceptional crafts) — source WeaponEnums.cs, BaseWeapon/BaseArmor, ArmsLore.cs.  
-  [Armor](/items/armor/) · [Weapons](/items/weapons/) · [Arms Lore](/skills/arms-lore/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/7c6dfae)</sub>
+  [Armor](/items/armor/) · [Weapons](/items/weapons/) · [Arms Lore](/skills/arms-lore/) <sub>[details](https://github.com/uotavern/uowiki/commit/7c6dfae)</sub>
 - **Fixed** — Expand Poisoning — correct AOS Infectious-Strike rule, add poison-tier effects (Lesser..Lethal + Darkglow/Parasitic), karma/self-poison; add Poisoning-&gt;Int fast-train to stat-gain.  
-  [Stat Gain](/mechanics/stat-gain/) · [Poisoning](/skills/poisoning/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/baa059d)</sub>
+  [Stat Gain](/mechanics/stat-gain/) · [Poisoning](/skills/poisoning/) <sub>[details](https://github.com/uotavern/uowiki/commit/baa059d)</sub>
 
 ## 2026-06-16
 
 - **Updated** — Expand stat-gain — add the 'spam a skill to fast-raise a stat' recipe (Up/Down arrows + primary-stat skill), per-stat trainer table incl. Snooping-&gt;Dex.  
-  [Stat Gain](/mechanics/stat-gain/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/0848018)</sub>
+  [Stat Gain](/mechanics/stat-gain/) <sub>[details](https://github.com/uotavern/uowiki/commit/0848018)</sub>
 - **Updated** — Add Customizing Your House sub-page — design mode, tools (walls/floors/stairs/roofs/doors/teleporters), stories, backup/commit/revert, bank-charged commit cost (source HouseFoundation.cs, BaseHouse.cs); link from housing + house-types.  
-  [House Customization](/playing/house-customization/) · [House Types](/playing/house-types/) · [Housing](/playing/housing/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/6341a7a)</sub>
+  [House Customization](/playing/house-customization/) · [House Types](/playing/house-types/) · [Housing](/playing/housing/) <sub>[details](https://github.com/uotavern/uowiki/commit/6341a7a)</sub>
 - **Updated** — Add rendered house-exterior gallery to housing page (uo-gallery--lg, smooth scaling) — visual reference from cottage to castle.  
-  [Housing](/playing/housing/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/7e2b6f9)</sub>
+  [Housing](/playing/housing/) <sub>[details](https://github.com/uotavern/uowiki/commit/7e2b6f9)</sub>
 - **Fixed** — Correct heavy-load travel — it's the Gate Travel spell (no overload check), not (only) public moongates; Recall blocks when overloaded but Gate Travel does not.  
-  [Housing](/playing/housing/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/09a7482)</sub>
+  [Housing](/playing/housing/) <sub>[details](https://github.com/uotavern/uowiki/commit/09a7482)</sub>
 - **Updated** — Expand housing — dynamic decay stages + IDOC loot-rush/PvP + moving heavy loads via moongates; document the Interior Decorator tool (Turn/Up/Down).  
-  [Decorating](/playing/decorating/) · [Housing](/playing/housing/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/a52d3db)</sub>
+  [Decorating](/playing/decorating/) · [Housing](/playing/housing/) <sub>[details](https://github.com/uotavern/uowiki/commit/a52d3db)</sub>
 - **Updated** — Render ALL crafting-page icons at uniform 2x native (was carpentry-only) for consistent sizing across systems.  
-  [Crafting](/crafting/) (12) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/c4b9791)</sub>
+  [Crafting](/crafting/) (12) <sub>[details](https://github.com/uotavern/uowiki/commit/c4b9791)</sub>
 
 ## 2026-06-15
 
 - **Updated** — Render carpentry icons at a uniform exact 2x native (drop the 64px clamp) for consistent sizing.  
-  [Carpentry](/crafting/carpentry/) · [Carpentry](/ja/crafting/carpentry/) · [Carpentry](/ko/crafting/carpentry/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/42cd10c)</sub>
+  [Carpentry](/crafting/carpentry/) · [Carpentry](/ja/crafting/carpentry/) · [Carpentry](/ko/crafting/carpentry/) <sub>[details](https://github.com/uotavern/uowiki/commit/42cd10c)</sub>
 - **Updated** — Cap carpentry 2x icons at 64px max dimension (aspect kept) so large furniture (tables/cabinets) no longer balloons.  
-  [Carpentry](/crafting/carpentry/) · [Carpentry](/ja/crafting/carpentry/) · [Carpentry](/ko/crafting/carpentry/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/de83831)</sub>
+  [Carpentry](/crafting/carpentry/) · [Carpentry](/ja/crafting/carpentry/) · [Carpentry](/ko/crafting/carpentry/) <sub>[details](https://github.com/uotavern/uowiki/commit/de83831)</sub>
 - **Updated** — Render carpentry icons at 2x native size (true aspect, crisp integer scale) via gen_crafting NATIVE_2X_SYSTEMS + uo-sprite-2x.  
-  [Carpentry](/crafting/carpentry/) · [Carpentry](/ja/crafting/carpentry/) · [Carpentry](/ko/crafting/carpentry/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/6e047bc)</sub>
+  [Carpentry](/crafting/carpentry/) · [Carpentry](/ja/crafting/carpentry/) · [Carpentry](/ko/crafting/carpentry/) <sub>[details](https://github.com/uotavern/uowiki/commit/6e047bc)</sub>
 - **Updated** — Add armor gallery to ko/ja pages; shrink in-table sprite box 72px→44px so tiny jewelry/ring art isn't blocky/oversized in crafting tables.  
-  [Armor](/ja/items/armor/) · [Armor](/ko/items/armor/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/e597728)</sub>
+  [Armor](/ja/items/armor/) · [Armor](/ko/items/armor/) <sub>[details](https://github.com/uotavern/uowiki/commit/e597728)</sub>
 - **Updated** — Add armor gallery to /items/armor/ — 148 piece sprites grouped by material (.uo-gallery), source data/armor.json.  
-  [Armor](/items/armor/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/7e4ec06)</sub>
+  [Armor](/items/armor/) <sub>[details](https://github.com/uotavern/uowiki/commit/7e4ec06)</sub>
 - **Added** — Add How to Connect page (ClassicUO → uo.hulryung.com:2593, auto-account); link from Getting Started.  
-  [Getting Started](/guides/getting-started/) · [How To Connect](/guides/how-to-connect/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/5d3821f)</sub>
+  [Getting Started](/guides/getting-started/) · [How To Connect](/guides/how-to-connect/) <sub>[details](https://github.com/uotavern/uowiki/commit/5d3821f)</sub>
 - **Updated** — Add Bulk Order Deeds page — point-based TOL+ system, skill gates, smith/tailor reward catalogs.  
-  [Bulk Order Deeds](/mechanics/bulk-order-deeds/) · [Mechanics](/mechanics/) · [Blacksmith](/professions/blacksmith/) · [Blacksmithy](/skills/blacksmithy/) · [Tailoring](/skills/tailoring/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/8c3a486)</sub>
+  [Bulk Order Deeds](/mechanics/bulk-order-deeds/) · [Mechanics](/mechanics/) · [Blacksmith](/professions/blacksmith/) · [Blacksmithy](/skills/blacksmithy/) · [Tailoring](/skills/tailoring/) <sub>[details](https://github.com/uotavern/uowiki/commit/8c3a486)</sub>
 - **Updated** — Join weapon/armor stats into recipe tables — Stats column (dmg/speed/hands/str, resists/str) on equipment-crafting systems.  
-  [Crafting](/crafting/) (12) · Ja (12) · Ko (12) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/d34163d)</sub>
+  [Crafting](/crafting/) (12) · Ja (12) · Ko (12) <sub>[details](https://github.com/uotavern/uowiki/commit/d34163d)</sub>
 - **Updated** — Cross-link cities and dungeons — nearest-town on dungeons, nearby-dungeons on Minoc.  
-  [Dungeons](/world/dungeons/) · [Minoc](/world/minoc/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/f3efd81)</sub>
+  [Dungeons](/world/dungeons/) · [Minoc](/world/minoc/) <sub>[details](https://github.com/uotavern/uowiki/commit/f3efd81)</sub>
 - **Updated** — Add prominent 'New to UO? Start here' newcomer entry card.  
-  [Home](/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/5d981d9)</sub>
+  [Home](/) <sub>[details](https://github.com/uotavern/uowiki/commit/5d981d9)</sub>
 - **Updated** — Source-verify anatomy +55%, parry 30%, magery cast-delay, taming first-tame penalty.  
-  [Anatomy](/skills/anatomy/) · [Animal Taming](/skills/animal-taming/) · [Magery](/skills/magery/) · [Parrying](/skills/parrying/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/590cd2b)</sub>
+  [Anatomy](/skills/anatomy/) · [Animal Taming](/skills/animal-taming/) · [Magery](/skills/magery/) · [Parrying](/skills/parrying/) <sub>[details](https://github.com/uotavern/uowiki/commit/590cd2b)</sub>
 - **Updated** — Publish source-verified combat formulas — hit chance, swing speed, damage stack, resist cap, parry.  
-  [Combat Advanced](/playing/combat-advanced/) · [Shard](/shard/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/cd19f84)</sub>
+  [Combat Advanced](/playing/combat-advanced/) · [Shard](/shard/) <sub>[details](https://github.com/uotavern/uowiki/commit/cd19f84)</sub>
 - **Fixed** — Warn own-tile ground drops silently bounce on AOS+. — from an in-game report  
-  [Items And Inventory](/playing/items-and-inventory/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/4e38333)</sub>
+  [Items And Inventory](/playing/items-and-inventory/) <sub>[details](https://github.com/uotavern/uowiki/commit/4e38333)</sub>
 - **Fixed** — Note pack lethality vs single-target stats, Headless One example. — from an in-game report  
-  [Combat Basics](/playing/combat-basics/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/c81a019)</sub>
+  [Combat Basics](/playing/combat-basics/) <sub>[details](https://github.com/uotavern/uowiki/commit/c81a019)</sub>
 - **Fixed** — Add Minoc east-face mining spot (2567,493). — from an in-game report  
-  [Minoc](/world/minoc/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/9c60974)</sub>
+  [Minoc](/world/minoc/) <sub>[details](https://github.com/uotavern/uowiki/commit/9c60974)</sub>
 
 ## 2026-06-13
 
 - **Updated** — Global bar aligns with Starlight gutter; gold card icons + dark asides; CJK gothic font (was mincho).  
-  [Home](/) · [Ja](/ja/) · [Ko](/ko/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/faab9ab)</sub>
+  [Home](/) · [Ja](/ja/) · [Ko](/ko/) <sub>[details](https://github.com/uotavern/uowiki/commit/faab9ab)</sub>
 - **Updated** — Point in-content forum links to www.uotavern.com/forum (unified domain).  
-  Ja (7) · Ko (6) · [Character Templates](/templates/) (3) · Guides (2) · Playing (2) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/c777711)</sub>
+  Ja (7) · Ko (6) · [Character Templates](/templates/) (3) · Guides (2) · Playing (2) <sub>[details](https://github.com/uotavern/uowiki/commit/c777711)</sub>
 - **Updated** — Serve under /wiki base path (unified domain www.uotavern.com/wiki).  
-  [Home](/) · [Ko](/ko/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/c72af51)</sub>
+  [Home](/) · [Ko](/ko/) <sub>[details](https://github.com/uotavern/uowiki/commit/c72af51)</sub>
 
 ## 2026-06-12
 
 - **Updated** — Forum links now point to forum.uotavern.com (forum moved to its subdomain).  
-  Ja (7) · Ko (7) · [Character Templates](/templates/) (3) · Guides (2) · Playing (2) · Home (1) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/5f541ed)</sub>
+  Ja (7) · Ko (7) · [Character Templates](/templates/) (3) · Guides (2) · Playing (2) · Home (1) <sub>[details](https://github.com/uotavern/uowiki/commit/5f541ed)</sub>
 - **Added** — Locale-aware generators — bestiary/magic/items/crafting now ko+ja.  
-  Ja (671) · Ko (671) · [Magic](/magic/) (66) · [Items](/items/) (23) · [Crafting](/crafting/) (12) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/a4f6fe2)</sub>
+  Ja (671) · Ko (671) · [Magic](/magic/) (66) · [Items](/items/) (23) · [Crafting](/crafting/) (12) <sub>[details](https://github.com/uotavern/uowiki/commit/a4f6fe2)</sub>
 - **Added** — Translate the 8 new templates + control essay to ko & ja.  
-  Ja (10) · Ko (10) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/d983cd7)</sub>
+  Ja (10) · Ko (10) <sub>[details](https://github.com/uotavern/uowiki/commit/d983cd7)</sub>
 - **Added** — Add 8 builds + control essay — bard/pvp tamer, tri-bard, crafter mule, lumberjack warrior, alchemy/halberd/stun mage (마사).  
-  [Character Templates](/templates/) (9) · Essays (1) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/65ef61c)</sub>
+  [Character Templates](/templates/) (9) · Essays (1) <sub>[details](https://github.com/uotavern/uowiki/commit/65ef61c)</sub>
 - **Updated** — Move crafting-during-downtime from Getting Started to How to Play.  
-  [Crafting During Downtime](/playing/crafting-during-downtime/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/7ea9f4e)</sub>
+  [Crafting During Downtime](/playing/crafting-during-downtime/) <sub>[details](https://github.com/uotavern/uowiki/commit/7ea9f4e)</sub>
 - **Updated** — Finish official-terminology review of Japanese core pages.  
-  [Skill Gain](/ja/mechanics/skill-gain/) · [Using And Training Skills](/ja/playing/using-and-training-skills/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/80241e4)</sub>
+  [Skill Gain](/ja/mechanics/skill-gain/) · [Using And Training Skills](/ja/playing/using-and-training-skills/) <sub>[details](https://github.com/uotavern/uowiki/commit/80241e4)</sub>
 - **Updated** — Apply official UO terminology to ko/ja core pages.  
-  Ko (14) · Ja (11) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/2f62585)</sub>
+  Ko (14) · Ja (11) <sub>[details](https://github.com/uotavern/uowiki/commit/2f62585)</sub>
 - **Added** — Translate templates, essays, reference, items refs & town-services (ko+ja).  
-  Ja (19) · Ko (19) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/5e298b2)</sub>
+  Ja (19) · Ko (19) <sub>[details](https://github.com/uotavern/uowiki/commit/5e298b2)</sub>
 - **Added** — Translate all How-to-Play pages to Korean & Japanese (30 pages each).  
-  Ja (17) · Ko (17) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/bd57036)</sub>
+  Ja (17) · Ko (17) <sub>[details](https://github.com/uotavern/uowiki/commit/bd57036)</sub>
 - **Added** — Translate all 22 profession hubs to Korean & Japanese.  
-  Ja (22) · Ko (22) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/bb397e9)</sub>
+  Ja (22) · Ko (22) <sub>[details](https://github.com/uotavern/uowiki/commit/bb397e9)</sub>
 - **Added** — Complete Japanese core translation (27 pages, matches Korean).  
-  Ja (14) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/38aa04f)</sub>
+  Ja (14) <sub>[details](https://github.com/uotavern/uowiki/commit/38aa04f)</sub>
 - **Added** — Korean core (27 pages) + Japanese core (13 pages) translations.  
-  Ko (26) · Ja (12) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/5d66027)</sub>
+  Ko (26) · Ja (12) <sub>[details](https://github.com/uotavern/uowiki/commit/5d66027)</sub>
 - **Added** — Add Korean & Japanese locales with browser auto-detection.  
-  [Ja](/ja/) · [Ko](/ko/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/2a4c5c4)</sub>
+  [Ja](/ja/) · [Ko](/ko/) <sub>[details](https://github.com/uotavern/uowiki/commit/2a4c5c4)</sub>
 - **Added** — Essays & Tales section + UO Expansions history.  
-  [Building A Mage](/essays/building-a-mage/) · [Essays](/essays/) · [Surviving Your First Week](/essays/surviving-your-first-week/) · [Tales And Resources](/essays/tales-and-resources/) · [Treasure Hunters Handbook](/essays/treasure-hunters-handbook/) · [Expansions](/reference/expansions/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/e5ea5ca)</sub>
+  [Building A Mage](/essays/building-a-mage/) · [Essays](/essays/) · [Surviving Your First Week](/essays/surviving-your-first-week/) · [Tales And Resources](/essays/tales-and-resources/) · [Treasure Hunters Handbook](/essays/treasure-hunters-handbook/) · [Expansions](/reference/expansions/) <sub>[details](https://github.com/uotavern/uowiki/commit/e5ea5ca)</sub>
 - **Added** — Enrich cities + 9 new towns, with uo.com service icons.  
-  [World](/world/) (18) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/e9e2555)</sub>
+  [World](/world/) (18) <sub>[details](https://github.com/uotavern/uowiki/commit/e9e2555)</sub>
 - **Updated** — Crafting: field-verified failure material loss (full listed resources burned per failed smith attempt) + EJ menu grouping + cheapest-trainer guidance (via mcp, claude-foundry).  
-  [Crafting](/playing/crafting/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/c244b49)</sub>
+  [Crafting](/playing/crafting/) <sub>[details](https://github.com/uotavern/uowiki/commit/c244b49)</sub>
 - **Updated** — Hiding: document the 10s skill-use lockout (field-verified — eager pacing wastes 1 in 3 attempts) (via mcp, claude-foundry).  
-  [Hiding](/skills/hiding/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/e4392bc)</sub>
+  [Hiding](/skills/hiding/) <sub>[details](https://github.com/uotavern/uowiki/commit/e4392bc)</sub>
 - **Updated** — Treasure dig-site coordinate table + per-dungeon detail (maps, features, spawns).  
-  [Treasure Hunting](/playing/treasure-hunting/) · [Treasure Locations](/playing/treasure-locations/) · [Dungeons](/world/dungeons/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/864b08e)</sub>
+  [Treasure Hunting](/playing/treasure-hunting/) · [Treasure Locations](/playing/treasure-locations/) · [Dungeons](/world/dungeons/) <sub>[details](https://github.com/uotavern/uowiki/commit/864b08e)</sub>
 - **Updated** — Authentic ink-on-parchment treasure map render.  
-  [Treasure Hunting](/playing/treasure-hunting/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/9ea9348)</sub>
+  [Treasure Hunting](/playing/treasure-hunting/) <sub>[details](https://github.com/uotavern/uowiki/commit/9ea9348)</sub>
 - **Updated** — Accurate decoded-map mechanic — 600-tile region, off-centre pin.  
-  [Treasure Hunting](/playing/treasure-hunting/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/343f906)</sub>
+  [Treasure Hunting](/playing/treasure-hunting/) <sub>[details](https://github.com/uotavern/uowiki/commit/343f906)</sub>
 
 ## 2026-06-11
 
 - **Updated** — Concrete how-to-raise method on every skill page.  
-  [Skills](/skills/) (58) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/73d0b2f)</sub>
+  [Skills](/skills/) (58) <sub>[details](https://github.com/uotavern/uowiki/commit/73d0b2f)</sub>
 - **Added** — By-profession hubs + PvP builds; plants/gardening; ServUO=emulator.  
-  Professions (23) · Guides (2) · Playing (1) · [Our Shard](/shard/) (1) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/b9ec1ef)</sub>
+  Professions (23) · Guides (2) · Playing (1) · [Our Shard](/shard/) (1) <sub>[details](https://github.com/uotavern/uowiki/commit/b9ec1ef)</sub>
 - **Added** — Treasure hunting — system, skills, dig-location map, decoded-map gump.  
-  [Treasure Hunting](/playing/treasure-hunting/) · [Cartography](/skills/cartography/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/8855a37)</sub>
+  [Treasure Hunting](/playing/treasure-hunting/) · [Cartography](/skills/cartography/) <sub>[details](https://github.com/uotavern/uowiki/commit/8855a37)</sub>
 - **Updated** — Verbal commands in seven languages from client speech.mul.  
-  [Verbal Commands](/playing/verbal-commands/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/b133847)</sub>
+  [Verbal Commands](/playing/verbal-commands/) <sub>[details](https://github.com/uotavern/uowiki/commit/b133847)</sub>
 - **Updated** — Verbal commands, UI/gumps reference, UO splash background.  
-  [Character And Stats](/playing/character-and-stats/) · [Communication And Social](/playing/communication-and-social/) · [Housing](/playing/housing/) · [Interface](/playing/interface/) · [Targeting](/playing/targeting/) · [Verbal Commands](/playing/verbal-commands/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/08084a7)</sub>
+  [Character And Stats](/playing/character-and-stats/) · [Communication And Social](/playing/communication-and-social/) · [Housing](/playing/housing/) · [Interface](/playing/interface/) · [Targeting](/playing/targeting/) · [Verbal Commands](/playing/verbal-commands/) <sub>[details](https://github.com/uotavern/uowiki/commit/08084a7)</sub>
 - **Added** — Detailed Weapons, Armor, and Tools references.  
-  [Armor](/items/armor/) · [Items](/items/) · [Tools](/items/tools/) · [Weapons](/items/weapons/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/209346a)</sub>
+  [Armor](/items/armor/) · [Items](/items/) · [Tools](/items/tools/) · [Weapons](/items/weapons/) <sub>[details](https://github.com/uotavern/uowiki/commit/209346a)</sub>
 - **Updated** — Render power words in the UO game font too (extracted from fonts.mul).  
-  [Magic](/magic/) (65) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/db8fd1c)</sub>
+  [Magic](/magic/) (65) <sub>[details](https://github.com/uotavern/uowiki/commit/db8fd1c)</sub>
 - **Updated** — Render spell words of power in Britannian runic font; rewrite Getting Started.  
-  [Magic](/magic/) (65) · Guides (1) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/64882ac)</sub>
+  [Magic](/magic/) (65) · Guides (1) <sub>[details](https://github.com/uotavern/uowiki/commit/64882ac)</sub>
 - **Added** — House types (with rendered exteriors) + decorating guide.  
-  [Decorating](/playing/decorating/) · [House Types](/playing/house-types/) · [Housing](/playing/housing/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/c9081cc)</sub>
+  [Decorating](/playing/decorating/) · [House Types](/playing/house-types/) · [Housing](/playing/housing/) <sub>[details](https://github.com/uotavern/uowiki/commit/c9081cc)</sub>
 - **Updated** — Dressed animated mob GIFs, enriched skill pages, 7x GM template.  
-  [Skills](/skills/) (49) · [Bestiary](/bestiary/) (21) · [Character Templates](/templates/) (2) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/3fecf64)</sub>
+  [Skills](/skills/) (49) · [Bestiary](/bestiary/) (21) · [Character Templates](/templates/) (2) <sub>[details](https://github.com/uotavern/uowiki/commit/3fecf64)</sub>
 - **Added** — Add How to Play section — 22 operational game-mechanics pages.  
-  Playing (23) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/04e7898)</sub>
+  Playing (23) <sub>[details](https://github.com/uotavern/uowiki/commit/04e7898)</sub>
 - **Added** — Skill banner icons + per-skill pages for all 58 skills.  
-  [Skills](/skills/) (59) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/3a1b6dc)</sub>
+  [Skills](/skills/) (59) <sub>[details](https://github.com/uotavern/uowiki/commit/3a1b6dc)</sub>
 - **Added** — Skills/hiding: new field-verified page (foundry thief evals); reports: HeadlessOne pack lethality data, Minoc east-face mining spot (2567,493).  
-  [Hiding](/skills/hiding/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/28f280a)</sub>
+  [Hiding](/skills/hiding/) <sub>[details](https://github.com/uotavern/uowiki/commit/28f280a)</sub>
 - **Updated** — Declutter sidebar, divide Monsters by type, PNG-default/GIF-on-hover.  
-  [Bestiary](/bestiary/) (570) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/c1a4920)</sub>
+  [Bestiary](/bestiary/) (570) <sub>[details](https://github.com/uotavern/uowiki/commit/c1a4920)</sub>
 - **Updated** — Server-standard skin tone + colored clothing, fuller armor gallery.  
-  [Paperdoll](/reference/paperdoll/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/2b46abe)</sub>
+  [Paperdoll](/reference/paperdoll/) <sub>[details](https://github.com/uotavern/uowiki/commit/2b46abe)</sub>
 - **Updated** — Show equipped humanoid mobs — dressed paperdoll + worn items.  
-  [Bestiary](/bestiary/) (54) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/fa2679a)</sub>
+  [Bestiary](/bestiary/) (54) <sub>[details](https://github.com/uotavern/uowiki/commit/fa2679a)</sub>
 - **Updated** — Recover positional body IDs (CuSidhe, mounts, dragons).  
-  [Bestiary](/bestiary/) (34) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/6cca484)</sub>
+  [Bestiary](/bestiary/) (34) <sub>[details](https://github.com/uotavern/uowiki/commit/6cca484)</sub>
 - **Added** — Paperdoll page — clothing/armor shown worn on a character.  
-  [Paperdoll](/reference/paperdoll/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/dc5a0d7)</sub>
+  [Paperdoll](/reference/paperdoll/) <sub>[details](https://github.com/uotavern/uowiki/commit/dc5a0d7)</sub>
 - **Updated** — Show creature GIF thumbnails on group index + bestiary index.  
-  [Bestiary](/bestiary/) (8) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/d1e3e62)</sub>
+  [Bestiary](/bestiary/) (8) <sub>[details](https://github.com/uotavern/uowiki/commit/d1e3e62)</sub>
 - **Updated** — Group catalog by era (Classic → AOS → SE → ML → ...) then subcategory.  
-  [Items](/items/) (22) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/de3944b)</sub>
+  [Items](/items/) (22) <sub>[details](https://github.com/uotavern/uowiki/commit/de3944b)</sub>
 - **Updated** — Cloth production chain, expansion-era tags, hue reference page, README.  
-  [Items](/items/) (22) · [Crafting](/crafting/) (11) · Reference (1) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/fb7cd3a)</sub>
+  [Items](/items/) (22) · [Crafting](/crafting/) (11) · Reference (1) <sub>[details](https://github.com/uotavern/uowiki/commit/fb7cd3a)</sub>
 - **Updated** — Bake intrinsic per-item hues (dyed cloth/clothing/scrolls).  
-  [Items](/items/) (12) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/895a2e8)</sub>
+  [Items](/items/) (12) <sub>[details](https://github.com/uotavern/uowiki/commit/895a2e8)</sub>
 - **Updated** — Bake UO hues into colored resource variants.  
-  [Resources](/items/catalog/resources/) · [Resources](/items/resources/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/158daf7)</sub>
+  [Resources](/items/catalog/resources/) · [Resources](/items/resources/) <sub>[details](https://github.com/uotavern/uowiki/commit/158daf7)</sub>
 - **Updated** — Reclassify catalog by gameplay type (Weapons/Armor/Shields/...).  
-  [Items](/items/) (24) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/986ff9b)</sub>
+  [Items](/items/) (24) <sub>[details](https://github.com/uotavern/uowiki/commit/986ff9b)</sub>
 - **Added** — Full item catalog — all 3,686 ServUO items with art.  
-  [Items](/items/) (14) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/225f2e6)</sub>
+  [Items](/items/) (14) <sub>[details](https://github.com/uotavern/uowiki/commit/225f2e6)</sub>
 - **Updated** — Reader-facing changelog, per-dungeon location maps, 2x-larger icons.  
-  [Bestiary](/bestiary/) (430) · [Magic](/magic/) (65) · [Crafting](/crafting/) (11) · [Items](/items/) (2) · [World](/world/) (1) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/a7cb00a)</sub>
+  [Bestiary](/bestiary/) (430) · [Magic](/magic/) (65) · [Crafting](/crafting/) (11) · [Items](/items/) (2) · [World](/world/) (1) <sub>[details](https://github.com/uotavern/uowiki/commit/a7cb00a)</sub>
 - **Updated** — Annotated region maps + interactive-map deep links.  
-  [World](/world/) (11) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/0d8609d)</sub>
+  [World](/world/) (11) <sub>[details](https://github.com/uotavern/uowiki/commit/0d8609d)</sub>
 - **Updated** — Extract client art/animations/sounds and embed across the wiki.  
-  [Bestiary](/bestiary/) (484) · [Magic](/magic/) (65) · [Crafting](/crafting/) (11) · [Items](/items/) (2) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/4f14501)</sub>
+  [Bestiary](/bestiary/) (484) · [Magic](/magic/) (65) · [Crafting](/crafting/) (11) · [Items](/items/) (2) <sub>[details](https://github.com/uotavern/uowiki/commit/4f14501)</sub>
 - **Added** — Character templates with progression storylines + character-creation mechanics.  
-  [Character Templates](/templates/) (6) · [Mechanics](/mechanics/) (1) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/44c9ae1)</sub>
+  [Character Templates](/templates/) (6) · [Mechanics](/mechanics/) (1) <sub>[details](https://github.com/uotavern/uowiki/commit/44c9ae1)</sub>
 - **Added** — Add crafting-during-downtime field guide.  
-  Crafting During Downtime <sub>[details](https://github.com/hulryung-uo/uowiki/commit/841a1ae)</sub>
+  Crafting During Downtime <sub>[details](https://github.com/uotavern/uowiki/commit/841a1ae)</sub>
 - **Fixed** — Yew does have a bank at Empath Abbey (652,820). — from an in-game report  
-  [Yew](/world/yew/) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/31708e7)</sub>
+  [Yew](/world/yew/) <sub>[details](https://github.com/uotavern/uowiki/commit/31708e7)</sub>
 - **Added** — Initial scaffold — Starlight site, ServUO extraction pipeline, 679 pages.  
-  [Bestiary](/bestiary/) (570) · [Magic](/magic/) (66) · [Crafting](/crafting/) (12) · [World](/world/) (11) · [Skills](/skills/) (9) · [Items](/items/) (3) · [Mechanics](/mechanics/) (3) · Guides (2) · [Our Shard](/shard/) (2) · Home (1) <sub>[details](https://github.com/hulryung-uo/uowiki/commit/97ce73b)</sub>
+  [Bestiary](/bestiary/) (570) · [Magic](/magic/) (66) · [Crafting](/crafting/) (12) · [World](/world/) (11) · [Skills](/skills/) (9) · [Items](/items/) (3) · [Mechanics](/mechanics/) (3) · Guides (2) · [Our Shard](/shard/) (2) · Home (1) <sub>[details](https://github.com/uotavern/uowiki/commit/97ce73b)</sub>
 
 ---
 
-Every change is a tracked git commit — [full history on GitHub](https://github.com/hulryung-uo/uowiki/commits/).
+Every change is a tracked git commit — [full history on GitHub](https://github.com/uotavern/uowiki/commits/).

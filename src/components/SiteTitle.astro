@@ -1,0 +1,33 @@
+---
+// Override of Starlight's SiteTitle. Starlight builds every <title> as
+// "<page> <delimiter> <site title>", so to get the cross-site template
+// "Page — Wiki | UO Tavern" (DESIGN.md, "Names and page titles") the configured
+// site title has to BE "Wiki | UO Tavern". That string is not a masthead, so
+// this component renders the wiki's own name in the header row instead, in the
+// page's language, linking to that language's wiki root as Starlight's did.
+const { siteTitleHref, lang } = Astro.locals.starlightRoute;
+const MASTHEAD: Record<string, string> = { en: 'UO Wiki', ko: 'UO 위키', ja: 'UO ウィキ' };
+const label = MASTHEAD[lang] ?? MASTHEAD.en;
+---
+
+<a href={siteTitleHref} class="site-title sl-flex">
+	<span translate="no">{label}</span>
+</a>
+
+<style>
+	@layer starlight.core {
+		.site-title {
+			align-items: center;
+			gap: var(--sl-nav-gap);
+			font-size: var(--sl-text-h4);
+			font-weight: 600;
+			color: var(--sl-color-text-accent);
+			text-decoration: none;
+			white-space: nowrap;
+			min-width: 0;
+		}
+		span {
+			overflow: hidden;
+		}
+	}
+</style>

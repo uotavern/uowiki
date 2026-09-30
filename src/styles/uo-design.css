@@ -25,6 +25,14 @@
 	--uo-ink-dim: #6b6149;       /* muted text */
 	--uo-parch: #4a3f26;         /* strong highlight text */
 	--uo-white: #1b1608;         /* strongest text / headings */
+	/* Semantic status colours (both themes). *-rgb are the same values as space-separated
+	 * channels, for `rgb(var(--uo-ok-rgb) / .1)`-style tints (Tailwind opacity modifiers). */
+	--uo-ok: #2e7d32;            /* online, for sale, success */
+	--uo-ok-rgb: 46 125 50;
+	--uo-danger: #b3261e;        /* offline, errors, delete, live-fight pulse */
+	--uo-danger-rgb: 179 38 30;
+	--uo-info: #2f5fa8;          /* the other side, WTB, neutral notice */
+	--uo-info-rgb: 47 95 168;
 	--uo-shadow-color: rgba(60, 45, 15, 0.18);
 
 	/* ── Type ─────────────────────────────────────────────────────────────── */
@@ -71,6 +79,12 @@
 	--uo-ink-dim: #b9ad92;
 	--uo-parch: #efe3c4;
 	--uo-white: #f6efdc;
+	--uo-ok: #6fcf6f;
+	--uo-ok-rgb: 111 207 111;
+	--uo-danger: #e06b6b;
+	--uo-danger-rgb: 224 107 107;
+	--uo-info: #6f9fe0;
+	--uo-info-rgb: 111 159 224;
 	--uo-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -209,6 +223,37 @@
   outline: 2px solid var(--uo-gold-bright);
   outline-offset: 3px;
 }
+/* ── Section sub-nav (.uo-subnav): a site's OWN navigation, one row under the global bar ──
+ * The global bar switches between sites; anything within a site (the forum's boards, the
+ * arena's Matches/Rankings, the Anima pages) goes here, never into the bar. Markup:
+ *   <nav class="uo-subnav" aria-label="Arena"><div class="uo-subnav__inner">
+ *     <a class="is-active" aria-current="page" href="…">Arena</a><a href="…">Matches</a>…
+ *   </div></nav>
+ * Same 1140px container as the bar, so the first item lines up with the brand. */
+.uo-subnav { background: var(--uo-bg-elev); border-bottom: 1px solid var(--uo-line); }
+.uo-subnav__inner { max-width: var(--uo-maxw); margin: 0 auto; padding: 0 16px; display: flex; align-items: center;
+	gap: var(--uo-space-2); overflow-x: auto; scrollbar-width: none; }
+.uo-subnav__inner::-webkit-scrollbar { display: none; }
+.uo-subnav a { flex: none; display: inline-flex; align-items: center; min-height: var(--uo-tap); padding: 0 var(--uo-space-1);
+	font-family: var(--uo-font-display); font-size: .85rem; font-weight: 600; letter-spacing: .04em; white-space: nowrap;
+	color: var(--uo-ink-dim); text-decoration: none; border-bottom: 2px solid transparent; }
+.uo-subnav a:hover { color: var(--uo-gold-bright); }
+.uo-subnav a.is-active { color: var(--uo-gold-bright); border-bottom-color: var(--uo-gold); }
+.uo-subnav a:first-child { margin-inline-start: calc(-1 * var(--uo-space-1)); }
+
+/* ── Footer (.uo-footer): the same closing block on every site, rendered from uo-nav.json ──
+ * (see DESIGN.md "The footer"). Six menu links in menu order, up to three site extras,
+ * GitHub; one tagline; the disclaimer verbatim; language links only where they exist. */
+.uo-footer { padding-block: var(--uo-space-6); background: var(--uo-bg-elev); border-top: 1px solid var(--uo-line-soft);
+	color: var(--uo-ink); font-family: var(--uo-font-body); }
+.uo-footer__inner { max-width: var(--uo-maxw); margin: 0 auto; padding: 0 16px; }
+.uo-footer__nav { display: flex; flex-wrap: wrap; gap: var(--uo-space-1) var(--uo-space-3); margin-bottom: var(--uo-space-3); }
+.uo-footer__nav a, .uo-footer__langs a { color: var(--uo-gold-bright); text-decoration: none; text-underline-offset: .2em; }
+.uo-footer__nav a:hover, .uo-footer__langs a:hover { text-decoration: underline; }
+.uo-footer__tagline { margin: 0 0 var(--uo-space-1); }
+.uo-footer__fine { margin: 0 0 var(--uo-space-1); font-size: .9rem; color: var(--uo-ink-dim); }
+.uo-footer__langs { margin: 0; display: flex; flex-wrap: wrap; gap: var(--uo-space-1) var(--uo-space-3); font-size: .9rem; }
+
 .uo-skip { position: fixed; top: var(--uo-space-1); left: var(--uo-space-2); transform: translateY(-200%); z-index: 1000; background: var(--uo-panel); color: var(--uo-ink); padding: var(--uo-space-2); border: 1px solid var(--uo-gold); border-radius: var(--uo-radius-sm); }
 .uo-skip:focus { transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) {

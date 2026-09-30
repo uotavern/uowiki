@@ -1,0 +1,21 @@
+---
+// Override of Starlight's Footer: keep its own footer (prev/next pagination,
+// and the edit / last-updated links when those are configured), then close the
+// page with the shared UO Tavern footer — the same block every site ends with,
+// rendered from uo-nav.json exactly as uohub/tools/uo_nav.py's render_footer()
+// does (menu items, GitHub, one tagline, the disclaimer verbatim, and links to
+// the OTHER languages this page exists in). Styling is the shared .uo-footer*
+// in uo-design.css; no per-site CSS. See DESIGN.md ("The footer").
+import Default from '@astrojs/starlight/components/Footer.astro';
+import { loadNav, renderFooter } from './uo-nav';
+import { otherLanguages } from './wiki-langs';
+
+const TAGLINE = 'The Library of Britannia.';
+
+const { id } = Astro.locals.starlightRoute;
+const footer = renderFooter(await loadNav(), TAGLINE, [], await otherLanguages(id));
+---
+
+<Default><slot /></Default>
+
+<Fragment set:html={footer} />

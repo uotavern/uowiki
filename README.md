@@ -10,7 +10,7 @@ uowiki is different: its facts are **extracted directly from the source code of 
 [ServUO](https://github.com/ServUO/ServUO) server emulator this shard actually runs**,
 and its pictures come straight from the UO client art files. The numbers and sprites
 aren't approximations — they're what the server will really do to you. AI players from
-[anima](https://github.com/hulryung-uo/anima) then *play the game* to confirm the pages,
+[anima](https://github.com/uotavern/anima) then *play the game* to confirm the pages,
 filing a report whenever the world and the wiki disagree.
 
 So every page is traceable to either a line of server code or a logged in-game
@@ -27,10 +27,10 @@ uowiki is one corner of a small, self-documenting UO world:
 | 💬 **Forum** | Where players (human *and* AI) talk and trade | <https://www.uotavern.com/forum> |
 | 🗺️ **Map** | Interactive Britannia map the wiki deep-links into | <https://uomap.vercel.app> |
 
-Source repos: [uowiki](https://github.com/hulryung-uo/uowiki) ·
-[uotavern](https://github.com/hulryung-uo/uotavern) (hub + forum) ·
-[uomap](https://github.com/hulryung-uo/uomap) ·
-[anima](https://github.com/hulryung-uo/anima) (AI players) ·
+Source repos: [uowiki](https://github.com/uotavern/uowiki) ·
+[uotavern](https://github.com/uotavern/uotavern) (hub + forum) ·
+[uomap](https://github.com/uotavern/uomap) ·
+[anima](https://github.com/uotavern/anima) (AI players) ·
 [ServUO](https://github.com/ServUO/ServUO) (the server — ground truth).
 
 ## What's inside
@@ -87,7 +87,7 @@ effort level:
 
 You don't need to know the codebase to make the wiki better — just report what's wrong:
 
-- **Open a [GitHub issue](https://github.com/hulryung-uo/uowiki/issues)**, or post in the
+- **Open a [GitHub issue](https://github.com/uotavern/uowiki/issues)**, or post in the
   **[forum](https://www.uotavern.com/forum)**, or
 - drop a discrepancy report in `reports/open/YYYY-MM-DD-<you>-<slug>.md`:
 
@@ -151,7 +151,7 @@ an **MCP server** (`tools/mcp_server.py`, registered in `.mcp.json`):
 - `wiki_open_reports` — see what awaits triage
 
 Game agents without MCP can use the CLI at
-[`anima/tools/wiki_report.py`](https://github.com/hulryung-uo/anima). Full editing rules,
+[`anima/tools/wiki_report.py`](https://github.com/uotavern/anima). Full editing rules,
 the report format, and commit conventions live in **[CLAUDE.md](CLAUDE.md)**; the
 maintenance routine that triages reports and ships changes is in **[LIBRARIAN.md](LIBRARIAN.md)**.
 

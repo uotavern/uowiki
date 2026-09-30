@@ -30,11 +30,21 @@ export default defineConfig({
 	markdown: { remarkPlugins: [remarkCjkFriendly, remarkBaseLinks] },
 	integrations: [
 		starlight({
-			title: { en: 'UO Wiki', ko: 'UO 위키', ja: 'UO ウィキ' },
+			// <title> template. Starlight always emits "<page> <titleDelimiter> <title>",
+			// so the cross-site shape "Page — Section | UO Tavern" (DESIGN.md, "Names and
+			// page titles") is reached by making the site title "Wiki | UO Tavern" and the
+			// delimiter an em dash: "Mining — Wiki | UO Tavern". The header masthead
+			// ("UO Wiki" / "UO 위키" / "UO ウィキ") is rendered by SiteTitle.astro instead.
+			title: 'Wiki | UO Tavern',
+			titleDelimiter: '—',
 			description:
 				'Knowledge base for Ultima Online — generated from server source code and verified in-game by AI agents. Companion to the UO Tavern forum.',
 			customCss: ['./src/styles/uo-design.css', './src/styles/theme.css', './src/styles/sprites.css'],
-			components: { Header: './src/components/Header.astro' },
+			components: {
+				Header: './src/components/Header.astro',
+				SiteTitle: './src/components/SiteTitle.astro',
+				Footer: './src/components/Footer.astro',
+			},
 			// Auto-route by browser language: a Korean browser lands on /ko/, a
 			// Japanese browser on /ja/, everyone else on English. Runs once (a flag
 			// in localStorage), so a manual language switch is respected afterward.
@@ -54,7 +64,7 @@ export default defineConfig({
 					content:
 						"(function(){try{var b='/wiki';var p=location.pathname;var r=p.indexOf(b)===0?(p.slice(b.length)||'/'):p;if(/^\\/(ko|ja)(\\/|$)/.test(r))return;if(localStorage.getItem('uo-lang'))return;var l=(navigator.language||'').toLowerCase();var t=l.indexOf('ko')===0?'ko':(l.indexOf('ja')===0?'ja':null);if(!t)return;localStorage.setItem('uo-lang',t);location.replace(b+'/'+t+(r==='/'?'/':r)+location.search+location.hash);}catch(e){}})();",
 				},
-					{ tag: 'meta', attrs: { property: 'og:site_name', content: 'UO Wiki' } },
+					{ tag: 'meta', attrs: { property: 'og:site_name', content: 'UO Tavern' } },
 					{ tag: 'meta', attrs: { property: 'og:image', content: 'https://www.uotavern.com/wiki/og.png' } },
 					{ tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
 					{ tag: 'meta', attrs: { name: 'twitter:image', content: 'https://www.uotavern.com/wiki/og.png' } },

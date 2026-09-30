@@ -150,6 +150,12 @@ body {
 header.header {
 	height: 4rem;
 }
+/* Starlight's mobile menu button (the hamburger) is fixed and centred on the
+ * whole --sl-nav-height, which now includes the bar — so it landed in the bar's
+ * second row, covering the "Client" item. Centre it in the header row instead. */
+starlight-menu-button button {
+	top: calc(var(--uo-bar-h) + (4rem - var(--sl-menu-button-size)) / 2);
+}
 /* On desktop, constrain the wiki's own header row (site title · search · language)
  * to the same shared container as the bar, so "UO Wiki" sits under the bar's
  * brand instead of at the page's left gutter. The outer <header> keeps its full
@@ -166,15 +172,27 @@ header.header {
 	}
 }
 
-/* Splash/home page: the hero lives in a centered .sl-container (67.5rem), but the
- * header row above it (site title on the left, search + language on the right)
- * spans the full page gutter. That mismatch makes "UO Wiki" and the language
- * picker hang OUTSIDE the hero. Widen the splash hero container to the same
- * full gutter so everything lines up. (Only the container holding a .hero is
- * affected — normal article pages keep their reading width.) */
+/* Splash/home page: the hero (and the cards under it) live in a centered
+ * .sl-container (67.5rem), narrower than the header row above. Now that the bar
+ * and the header row are boxed to the shared container (--uo-maxw, 16px gutter),
+ * box the splash content to the same column: max-width is the container minus
+ * its gutter, so the hero's edge sits exactly under "UO Wiki" and the bar's
+ * brand. Below that width the panel's own --sl-content-pad-x is the gutter.
+ * (Only the container holding a .hero is affected — normal article pages keep
+ * their reading width.) */
 .sl-container:has(.hero) {
-	max-width: none;
+	max-width: calc(var(--uo-maxw) - 2 * var(--uo-space-2));
 	padding-inline: 0;
+	margin-inline: auto;
+}
+/* The hero sits on a dark scrim over the login backdrop (sprites.css) in BOTH
+ * themes, so its text must stay light even on the light page. The generic
+ * `h1#_top { color: var(--uo-white) }` above outranks `.hero h1` (ID selector)
+ * and the minimal action button uses --sl-color-white — both go dark in the
+ * light theme. Re-assert the hero's own light ink here. */
+.hero h1#_top,
+.hero .sl-link-button.minimal {
+	color: #f4efe3;
 }
 
 /* Asides (:::note etc.) — Starlight's default pastel panels clash with our warm
@@ -198,6 +216,32 @@ header.header {
 .starlight-aside :not(pre) > code {
 	background-color: var(--uo-bg);
 	color: var(--uo-parch);
+}
+
+/* Landing rhythm (cross-site review): the splash headline at the hub's size
+ * (--uo-fs-h1 tops out at 3.4rem ≈ 54px; Starlight's hero h1 ran to 4rem),
+ * cards and link cards on the shared hairline / ink tokens instead of
+ * Starlight's grey ramp, and the hero's action buttons with the shared small
+ * radius rather than Starlight's pill. */
+.hero h1 {
+	font-size: var(--uo-fs-h1);
+}
+.card,
+.sl-link-card {
+	border-color: var(--uo-line);
+	background-color: var(--uo-panel);
+	color: var(--uo-ink);
+}
+.card .title,
+.sl-link-card .title {
+	color: var(--uo-white);
+}
+.sl-link-card:hover {
+	border-color: var(--uo-gold);
+	background-color: var(--uo-bg-elev);
+}
+.sl-link-button {
+	border-radius: var(--uo-radius-sm);
 }
 
 /* CardGrid icons — force gold (the multicolour seti:* icons clash; index.mdx now

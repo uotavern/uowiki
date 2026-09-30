@@ -1,73 +1,15 @@
 ---
 // Override of Starlight's Header: prepend the shared cross-site "global bar"
 // above the default wiki header, so the wiki reads as part of one UO Tavern
-// site. The bar's MENU is defined once, in uohub/uo-nav.json (published at
-// https://www.uotavern.com/uo-nav.json); this component renders it the same
-// way uohub/tools/uo_nav.py does (brand, one <a> per item, the shared inline
-// theme toggle) and marks only the "wiki" item active. The markup contract and
-// styling are the shared ones from uo-design.css (.uo-globalbar*) — no per-site
-// CSS here. See DESIGN.md ("The global bar").
-//
-// The definition is loaded at BUILD time: the live hub file first (short
-// timeout, so an offline build still works), else the vendored copy in
-// src/data/uo-nav.json (`npm run sync-nav` refreshes it from the hub).
+// site. The bar's MENU is defined once, in uohub/uo-nav.json; uo-nav.ts loads
+// it and renders it the way uohub/tools/uo_nav.py does (brand, one <a> per
+// item, the shared inline theme toggle), marking only the "wiki" item active.
+// The markup contract and styling are the shared ones from uo-design.css
+// (.uo-globalbar*) — no per-site CSS here. See DESIGN.md ("The global bar").
 import Default from '@astrojs/starlight/components/Header.astro';
-import vendored from '../data/uo-nav.json';
+import { loadNav, renderGlobalbar } from './uo-nav';
 
-const NAV_URL = 'https://www.uotavern.com/uo-nav.json';
-const ACTIVE = 'wiki';
-
-type NavItem = { id: string; label: string; href: string };
-type Nav = { version: number; brand: { label: string; rune: string; href: string }; items: NavItem[] };
-
-function isNav(x: unknown): x is Nav {
-	const n = x as Nav;
-	return !!n && typeof n === 'object' && !!n.brand && Array.isArray(n.items) && n.items.length > 0;
-}
-
-async function loadNav(): Promise<Nav> {
-	try {
-		const res = await fetch(NAV_URL, { signal: AbortSignal.timeout(3000) });
-		if (res.ok) {
-			const live = await res.json();
-			if (isNav(live)) return live;
-		}
-	} catch {
-		// offline, or the hub has not published the file yet — use the vendored copy
-	}
-	return vendored as Nav;
-}
-
-const nav = await loadNav();
-if (!nav.items.some((i) => i.id === ACTIVE)) {
-	throw new Error(`uo-nav.json has no "${ACTIVE}" item; known: ${nav.items.map((i) => i.id).join(', ')}`);
-}
-
-const esc = (s: string) =>
-	s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-
-// One toggle for all sites (uo_nav.TOGGLE): self-contained, so the page needs
-// no extra script for it. Kept character-for-character equal to the hub's.
-const TOGGLE =
-	'<button class="uo-theme-toggle" type="button" aria-label="Toggle light/dark theme" ' +
-	"onclick=\"(function(d){var n=d.getAttribute('data-theme')==='dark'?'light':'dark';" +
-	"d.setAttribute('data-theme',n);try{localStorage.setItem('uo-theme',n);" +
-	"localStorage.setItem('starlight-theme',n);}catch(e){}})(document.documentElement)\">" +
-	'<span class="uo-theme-toggle__moon" aria-hidden="true">🌙</span>' +
-	'<span class="uo-theme-toggle__sun" aria-hidden="true">☀</span></button>';
-
-const links = nav.items
-	.map(
-		(item) =>
-			`<a${item.id === ACTIVE ? ' class="is-active" aria-current="page"' : ''} ` +
-			`href="${esc(item.href)}">${esc(item.label)}</a>`,
-	)
-	.join('');
-const bar =
-	'<div class="uo-globalbar"><div class="uo-globalbar__inner">' +
-	`<a class="uo-globalbar__brand" href="${esc(nav.brand.href)}">${esc(nav.brand.label)} ` +
-	`<span class="uo-globalbar__rune" aria-hidden="true">${esc(nav.brand.rune)}</span></a>` +
-	`<nav class="uo-globalbar__nav" aria-label="UO Tavern">${links}${TOGGLE}</nav></div></div>`;
+const bar = renderGlobalbar(await loadNav(), 'wiki');
 ---
 
 <Fragment set:html={bar} />

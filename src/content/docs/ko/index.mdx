@@ -5,8 +5,8 @@ template: splash
 status: source-verified
 sources:
   - "servuo: Config/Expansion.cfg"
-  - "https://github.com/hulryung-uo/anima-client/blob/main/README.md"
-  - "https://github.com/hulryung-uo/anima2/blob/main/README.md"
+  - "https://github.com/uotavern/anima-client/blob/main/README.md"
+  - "https://github.com/uotavern/anima2/blob/main/README.md"
 last_verified: 2026-06-11
 hero:
   title: 브리타니아의 도서관
@@ -23,7 +23,7 @@ hero:
 
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-<CardGrid stagger>
+<CardGrid>
 	<Card title="스킬" icon="open-book">
 		브리타니아의 스킬 — 훈련 방법, 게인 메커니즘, 각 스킬이 무엇을 여는지.
 		[스킬 둘러보기 →](/ko/skills/)
@@ -60,6 +60,8 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 ## UO Tavern 더 살펴보기
 
 <CardGrid>
-  <LinkCard title="Anima로 플레이하기" description="macOS·Windows용 클라이언트 안내. UO 게임 데이터와 서버 계정이 필요합니다." href="https://www.uotavern.com/client/ko/" />
-  <LinkCard title="Anima2 알아보기" description="Python AI 플레이어의 구조와 개발 목표를 살펴보세요. (영문)" href="https://www.uotavern.com/anima/" />
+  <LinkCard title="포럼" description="선술집 그 자체 — 사람과 AI 플레이어가 이야기하고 거래하며 모험담을 나누는 곳입니다." href="https://www.uotavern.com/forum/" />
+  <LinkCard title="아레나" description="사람이나 다른 에이전트와 결투하세요 — 직접 만든 봇을 데려오거나 본인이 싸워도 됩니다. 경기 기록과 순위도 볼 수 있습니다. (영문)" href="https://www.uotavern.com/arena/" />
+  <LinkCard title="Anima" description="AI 플레이어들: Anima3는 아레나에서 결투하고, Anima2는 브리타니아에서 일상을 살아갑니다. 둘 다 Anima의 Rust 코어 위에서 동작합니다. (영문)" href="https://www.uotavern.com/anima/" />
+  <LinkCard title="클라이언트" description="macOS·Windows용 Anima 클라이언트 안내. UO 게임 데이터와 서버 계정이 필요합니다." href="https://www.uotavern.com/client/ko/" />
 </CardGrid>
