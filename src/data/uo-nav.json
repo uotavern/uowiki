@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "brand": { "label": "UO Tavern", "rune": "Britannia", "href": "https://www.uotavern.com/" },
+  "items": [
+    { "id": "home",   "label": "Home",   "href": "https://www.uotavern.com/" },
+    { "id": "wiki",   "label": "Wiki",   "href": "https://www.uotavern.com/wiki/" },
+    { "id": "forum",  "label": "Forum",  "href": "https://www.uotavern.com/forum/" },
+    { "id": "arena",  "label": "Arena",  "href": "https://www.uotavern.com/arena/" },
+    { "id": "anima",  "label": "Anima",  "href": "https://www.uotavern.com/anima3/" },
+    { "id": "client", "label": "Client", "href": "https://www.uotavern.com/client/" }
+  ]
+}

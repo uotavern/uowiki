@@ -135,10 +135,10 @@ body {
 	height: var(--uo-bar-h);
 	z-index: 100; /* above Starlight's --sl-z-index-navbar */
 }
-.uo-globalbar__inner {
-	max-width: none;
-	padding-inline: 1.5rem; /* match Starlight's header gutter so brand ↔ site title align */
-}
+/* The bar's inner width is the SHARED container (.uo-globalbar__inner in
+ * uo-design.css: max-width --uo-maxw, centered, 16px gutter) — not overridden
+ * here, so the brand starts at the same x as on the hub, forum and arena. */
+
 /* Push Starlight's header down so it clears the fixed bar, and keep it at its
  * NATIVE single-row height (4rem). Starlight ties the header wrapper height to
  * --sl-nav-height, which now also includes the bar — so without this override the
@@ -149,6 +149,21 @@ body {
 }
 header.header {
 	height: 4rem;
+}
+/* On desktop, constrain the wiki's own header row (site title · search · language)
+ * to the same shared container as the bar, so "UO Wiki" sits under the bar's
+ * brand instead of at the page's left gutter. The outer <header> keeps its full
+ * width (background + hairline span the page); only the inner row is boxed.
+ * Below 50rem Starlight's mobile header is left untouched. */
+@media (min-width: 50rem) {
+	header.header {
+		padding-inline: 0;
+	}
+	header.header > .header {
+		max-width: var(--uo-maxw);
+		margin-inline: auto;
+		padding-inline: var(--uo-space-2);
+	}
 }
 
 /* Splash/home page: the hero lives in a centered .sl-container (67.5rem), but the
