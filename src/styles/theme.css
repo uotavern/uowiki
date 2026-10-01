@@ -254,3 +254,8 @@ starlight-menu-button button {
 }
 
 /* Search box + cards pick up the warm surface automatically via the vars above. */
+
+/* The shared footer closes Starlight's content column here, not the full page width: a band of
+   its own colour would read as a box inside the column, so it is a rule and plain text instead. */
+main .uo-footer { background: transparent; margin-top: var(--uo-space-6); padding-block: var(--uo-space-4) 0; }
+main .uo-footer__inner { max-width: none; padding: 0; }

@@ -5,7 +5,7 @@
 // rendered from uo-nav.json exactly as uohub/tools/uo_nav.py's render_footer()
 // does (menu items, GitHub, one tagline, the disclaimer verbatim, and links to
 // the OTHER languages this page exists in). Styling is the shared .uo-footer*
-// in uo-design.css; no per-site CSS. See DESIGN.md ("The footer").
+// in uo-design.css; theme.css only drops the band (the footer sits inside the content column here). See DESIGN.md ("The footer").
 import Default from '@astrojs/starlight/components/Footer.astro';
 import { loadNav, renderFooter } from './uo-nav';
 import { otherLanguages } from './wiki-langs';
